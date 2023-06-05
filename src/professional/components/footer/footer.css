@@ -1,0 +1,55 @@
+.footer-container {
+    background-color: #253044;
+    min-height: 60vh;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.about {
+    flex: 50%;
+}
+
+.our-page {
+    flex: 50%;
+}
+
+.footer-title {
+    font-size: 42px;
+    margin: 15px;
+    color: white;
+}
+
+.footer-description {
+    margin-left: 10px;
+    margin-right: 100px;
+    text-align: start;
+    line-height: 2em;
+    color: rgb(205, 203, 203);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footer-end {
+    height: 80px;
+    background-color: #151923;
+    display: flex;
+    align-items: center;
+}
+
+.footer-end ul {
+    flex: 100%;
+    color: white;
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-end ul li {
+    flex: 50%;
+    margin-left: 100px;
+    margin-right: 50px;
+    font-size: 24px;
+}

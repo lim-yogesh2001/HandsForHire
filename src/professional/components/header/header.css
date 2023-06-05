@@ -1,0 +1,125 @@
+
+.image {
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1483134529005-4c93495107d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+ .image-overlay {
+     width: 100%;
+     background-color: rgb(13, 97, 128, 0.9);
+     position: relative;
+ }
+ 
+ .header{
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ .header-item1 {
+     flex: 50%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .header-item2 {
+     flex: 50%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .handsforhire {
+     margin: 10px 20px;
+     font-size: 30px;
+     color: #F4ECEC;
+ }
+ 
+ .works {
+     color: #F4ECEC;
+     margin-left: 51px;
+     margin-right: 50px;
+ }
+ 
+ .header-item2 p {
+     color: #F4ECEC;
+     margin-left: 30px;
+ }
+ 
+ 
+ .header-title {
+     display: inline;
+     color: #FFFFFF;
+     font-size: 58px;
+     width: 50%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 25%;
+     text-align: center;
+ }
+ 
+ .hirenow-button {
+     color: white;
+     background-color: #F44E4E;
+     border: none;
+     width: 230px;
+     font-size: 20px;
+     padding: 10px;
+     border-radius: 3px;
+     position: absolute;
+     top: 65%;
+     left: 43%;
+ }
+ 
+ .hirenow-button:hover {
+     color: black;
+     background-color: orange;
+ }
+ 
+
+ .header-profile-image {
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+ }
+
+ .username {
+    font-size: 28px;
+    font-weight: 300;
+    color: white;
+ }
+
+ .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+ }
+
+
+ 
+
+
+ 
+ 
+ /* .header-logo {
+     background-image: url(../../../../assets/HandsforHireLogo.png);
+     width: 150px;
+     height: 70px;
+     background-repeat: no-repeat;
+     background-size: contain;
+ } */
+ 
+ /* .professional-header::before {
+     background-color: rgb(13, 97, 128, 0.9);
+     position: absolute;
+     display: block;
+     width: 100%;
+     height: 100%;
+ } */

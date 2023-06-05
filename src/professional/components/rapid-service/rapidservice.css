@@ -1,0 +1,32 @@
+
+.rapid-services {
+    background-color: rgb(196, 196, 196, 0.5);
+    min-height: 20vh;
+    margin-top: 50px;
+    display: flex;
+}
+
+.rapid-services-1 {
+    flex: 50%;
+}
+
+.rapid-services-2 {
+    flex: 50%;
+}
+
+.rapid-service-title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.rapid-service-logo {
+    background-image: url(../../../../assets/rapidservice.png);
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 200px;
+}

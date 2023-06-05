@@ -1,0 +1,88 @@
+
+.main-container {
+    display: flex;
+    justify-content: left;
+}
+
+.filter-options {
+    flex: 30%;
+    border-right: 1px solid #000000 ;
+}
+
+.professional-list-container {
+    flex: 70%;
+    /* margin: 10px; */
+}
+
+.radiolable {
+    font-size: 24px;
+}
+
+.radio-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    width: 1.5rem;
+    height: 1.15rem;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.reviews-container {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sort-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort-container p{
+    flex: 20%;
+    margin: 10px 15px;
+    font-size: 24px;
+}
+
+.sort-dropdown {
+    flex: 80%;
+    margin: 5px;
+}
+
+.services {
+    margin: 20px 15px;
+}
+
+.button-style {
+    border-radius: "20px"; 
+    margin-right:'5px'; 
+    font-size: '12px';
+}
+
+.slider-container {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container p {
+    flex: 10%;
+    font-size: 24px;
+}
+
+.slider {
+    flex: 90%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.search-browse-professional {
+    border-bottom: 1px solid #000000;
+    padding: 20px;
+}

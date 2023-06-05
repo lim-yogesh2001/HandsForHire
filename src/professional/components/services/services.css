@@ -1,0 +1,107 @@
+
+
+.services {
+    min-height: 120vh;
+    background-color: #ffffff;
+}
+
+
+.service-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.service1-item-1{
+    flex: 50%;
+    margin-left: 200px;
+}
+
+.service1-item-2{
+    flex: 50%;
+    margin-left: 200px;
+}
+
+
+.service1-image{
+    background-image: url(https://images.pexels.com/photos/9666305/pexels-photo-9666305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 453px;
+    width: 415px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 22px;
+}
+
+.service-title {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.service1-item-1 ul {
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.service1-item-1 ul li {
+    padding: 10px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.service-button {
+    color: #ffffff;
+    border: none;
+    background-color: #F53E3E;
+    width: 180px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    /* height: 50px; */
+    border-radius: 3px;
+    margin-left: 80px;
+}
+
+.service-button:hover{
+    color: black;
+    background-color: orange;
+}
+
+.service-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.service2-item-1{
+    flex: 50%;
+    margin-left: 200px;
+}
+
+.service2-item-2 {
+    flex: 50%;
+    margin-left: 200px;
+}
+
+.service2-item-2 ul {
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.service2-item-2 ul li {
+    padding: 10px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.service2-image {
+    background-image: url(https://images.pexels.com/photos/9875422/pexels-photo-9875422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 453px;
+    width: 415px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 22px;
+}

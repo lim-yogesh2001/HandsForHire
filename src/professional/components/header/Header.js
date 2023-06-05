@@ -1,0 +1,57 @@
+import { IconContext } from 'react-icons';
+import './header.css';
+import { BsCaretDownFill, BsChatDots } from "react-icons/bs";
+import { IoNotificationsOutline } from 'react-icons/io5';
+import SearchBar from '../searchbar/Searchbar';
+
+function Header({ isAuthenticated, imageheight, height, boolSearchBar }) {
+
+
+
+    return (
+        <header>
+            <div className='image' style={{ minHeight: `${imageheight}` }}>
+                <div className='image-overlay' style={{ height: `${height}` }}>
+                    <div className='header'>
+                        <div className='header-item1'>
+                            <p className='handsforhire'>HandsForHire</p>
+                            <p className='works'>How It Works</p>
+                        </div>
+
+                        {isAuthenticated === false ? <div className='header-item2'>
+                            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                <p>Become a professional</p><span><BsCaretDownFill style={{ paddingLeft: "10px", color: 'white' }} /></span>
+                            </div>
+                            <p>Sign Up</p>
+                            <p>Sign In</p>
+                        </div> :
+                            <div className='header-item2'>
+                                <div style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }}>
+                                    <IconContext.Provider value={{ size: "30px", color: "white" }}>
+                                        <BsChatDots style={{ marginRight: "20px", marginLeft: "50px" }} />
+                                        <IoNotificationsOutline style={{ marginRight: "20px" }} />
+                                    </IconContext.Provider>
+                                    <img src='https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80' className='header-profile-image' alt='profileImage' />
+                                    <p className='username'>Jhon Doe</p>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                    {isAuthenticated === false && boolSearchBar === false ?
+                        <div>
+                            <p className='header-title'>Find a Plumber and Elecrician for maintenance</p>
+                            <button className='hirenow-button'>Hire Now</button>
+                        </div> : isAuthenticated === true && boolSearchBar === true ?
+                            <div className='flex-container'>
+                                <SearchBar />
+                            </div> : null
+                    }
+
+                </div>
+            </div>
+        </header>
+    )
+}
+
+export default Header;
