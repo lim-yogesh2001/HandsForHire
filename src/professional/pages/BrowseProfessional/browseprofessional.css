@@ -48,11 +48,6 @@ input[type="radio"] {
     font-size: 24px;
 }
 
-.sort-dropdown {
-    flex: 80%;
-    margin: 5px;
-}
-
 .services {
     margin: 20px 15px;
 }

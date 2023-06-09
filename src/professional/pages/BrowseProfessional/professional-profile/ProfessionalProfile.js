@@ -1,10 +1,31 @@
 
-import { Rating, Menu, MenuItem } from '@mui/material';
+import { Rating } from '@mui/material';
 import { MdMoreHoriz, MdMonitor, MdPhoneAndroid, MdOutlineLightbulb } from 'react-icons/md';
 import './professional-profile.css';
+import ReviewList from './ReviewList/ReviewList';
 
 
 function ProfessionalProfile() {
+    const reviewsAndComments = [
+        {
+            id: 1,
+            username: 'Yogesh Limbu',
+            imageUrl: 'https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80',
+            comment: 'this is an amaizing movies with new technology. What the heck is wrong with my application.'
+        },
+        {
+            id: 2,
+            username: 'Sagar Gurung',
+            imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
+            comment: 'this is an amaizing movies with new technology. What the heck is wrong with my application.'
+        },
+        {
+            id: 3,
+            username: 'Darshan Rai',
+            imageUrl: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=389&q=80',
+            comment: 'this is an amaizing movies with new technology. What the heck is wrong with my application.'
+        },
+    ]
 
     return (
         <div className="profile-container">
@@ -20,14 +41,14 @@ function ProfessionalProfile() {
                 <div className='message-container'>
                     <button className='message-button'>Message Now</button>
                     <button className='menu-bar'><MdMoreHoriz style={{ height: '85px', width: '85px' }} /></button>
-                    <Menu
+                    {/* <Menu
                         id='menu'
                         MenuListProps={{
                             'aria-labelledby': 'basic-button',
                         }} >
                         <MenuItem >Hire Now</MenuItem>
                         <MenuItem >Report</MenuItem>
-                    </Menu>
+                    </Menu> */}
                 </div>
                 <div className='user-rate-container'>
                     <p>Per Hour: Rs.500</p>
@@ -54,7 +75,7 @@ function ProfessionalProfile() {
                 </div>
                 <div className='reviews-customer-container'>
                     <p className='reviews-title'>Reviews From Customer</p>
-                    <div className=''></div>
+                    <ReviewList items={reviewsAndComments} />
                 </div>
             </div>
 

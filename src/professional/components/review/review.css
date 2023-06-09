@@ -1,0 +1,42 @@
+
+.review {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-image-style {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.img-container {
+    flex: 20%;
+}
+
+.comment-container {
+    flex: 80%;
+    margin: 10px;
+}
+
+.username-style {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0, 0.8);
+    line-height: 1.5em;
+}
+
+.comment {
+    /* white-space: nowrap; */
+    text-overflow: clip;
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+}
+
+.comment p {
+    color: rgb(0, 0, 0, 0.8);
+    line-height: 1.5em;
+}

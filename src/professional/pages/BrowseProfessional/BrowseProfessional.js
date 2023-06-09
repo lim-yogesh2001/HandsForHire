@@ -3,8 +3,8 @@ import './browseprofessional.css';
 import Header from '../../components/header/Header';
 import ProfessionalViewCard from '../../../components/ProfessionalViewCard/ProfessionalViewCard';
 import Footer from '../../components/footer/Footer';
-import ProfessionalProfile from './professional-profile/ProfessionalProfile';
-// import ProfessionalBody from './ProfessionalBody';
+// import ProfessionalProfile from './professional-profile/ProfessionalProfile';
+import ProfessionalBody from './ProfessionalBody';
 
 function BrowseProfessional() {
 
@@ -59,8 +59,8 @@ function BrowseProfessional() {
         <>
             <Header boolSearchBar={false} isAuthenticated={true} imageheight="40vh" height="40vh" />
             <main>
-                {/* <ProfessionalBody proflist={renderedItems} /> */}
-                <ProfessionalProfile />
+                <ProfessionalBody proflist={renderedItems} />
+                {/* <ProfessionalProfile /> */}
             </main>
             <Footer />
         </>

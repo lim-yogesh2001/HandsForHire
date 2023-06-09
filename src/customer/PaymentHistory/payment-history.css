@@ -1,0 +1,36 @@
+.payment-history-container {
+    margin: 0px;
+    padding: 10px;
+}
+
+.payment-history-header {
+    padding: 5px;
+    border-bottom: 1px solid #000000;
+}
+
+.payment-history-header p {
+    padding-left: 10px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'Raleway';
+}
+
+.payment-history-body {
+    margin: 20px 0px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: -2px 4px 4px rgb(0, 0, 0, 0.25);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-history-body p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.7);
+}

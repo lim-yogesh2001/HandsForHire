@@ -1,0 +1,42 @@
+
+
+.help-support-container {
+    /* max-height: 30v; */
+    background-color: white;
+    padding: 10px 0;
+    margin-top: 0;
+    box-shadow: -1px 1px 2px 1px rgb(223, 219, 219);
+    height: 40vh;
+    margin-left: 40px;
+    margin-left: 40px;
+}
+
+.help-support-header {
+    border-bottom: 1px solid rgb(197, 192, 192);
+    padding: 8px;
+}
+
+.help-support-header p {
+    font-size: 24px;
+    color: rgb(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.help-support-body{
+    margin: 5px;
+    padding: 10px;
+}
+
+.help-support-body, ul{
+    text-align: center;
+    list-style-type: none;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.help-support-body, ul, li {
+    padding: 5px;
+    width: auto;
+    color: rgb(0, 0, 0, 0.6);
+    cursor: pointer;
+}

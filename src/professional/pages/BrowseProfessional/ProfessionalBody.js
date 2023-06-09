@@ -1,10 +1,17 @@
 
 import SearchBar from '../../components/searchbar/Searchbar';
-import { Rating, FormControl, Select, MenuItem, Button, Slider } from '@mui/material';
+import { Rating,  Button, Slider } from '@mui/material';
+import DropDown from '../../components/dropdown/DropDown';
 
 
 function ProfessionalBody ({ proflist }) {
-    let sortOpt;
+    const dropdownValues = [
+        "a to z",
+        "z to a",
+        "Price High to Low",
+        "Price Low to High",
+    ]
+
     return (
         <div className='main-container'>
                     <div className='filter-options'>
@@ -42,16 +49,7 @@ function ProfessionalBody ({ proflist }) {
                         </div>
                         <div className='sort-container'>
                             <p>Sort By</p>
-                            <div className='sort-dropdown'>
-                                <FormControl fullWidth>
-                                    <Select id='sort' value={sortOpt}>
-                                        <MenuItem value="a to z">a to z</MenuItem>
-                                        <MenuItem value="z to a">z to a</MenuItem>
-                                        <MenuItem value="Price high to low">Price high to low</MenuItem>
-                                        <MenuItem value="Price low to high">Price low to high</MenuItem>
-                                    </Select>
-                                </FormControl>
-                            </div>
+                            <DropDown dropdownValues={dropdownValues} /> 
                         </div>
                         <div className='services'>
                             <Button variant='contained' color='success' style={{borderRadius: "20px", marginRight: "5px", marginTop: "10px", fontSize: "12px" }}>

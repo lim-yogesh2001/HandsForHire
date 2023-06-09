@@ -1,0 +1,132 @@
+
+
+
+.profile-box {
+    background-color: #ffffff;
+    height: auto;
+    min-height: 100vh;
+    width: auto;
+    padding-bottom: 15px;
+    /* margin: 1rem 2rem 1rem 2rem; */
+    box-shadow: 1px 3px 2px 1px rgb(223, 219, 219);
+}
+
+.profile-box-header {
+     display: flex;
+     flex-direction: row;
+     border-bottom: 2px solid rgb(190, 186, 186);
+}
+
+.profile-header-item1 {
+    flex-grow: 2;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.blue-background {
+    position: relative;
+    background-color: #1B1F42;
+    height: 9rem;
+    overflow: visible;
+}
+
+.prof-cover-image {
+    position: absolute;
+    border-radius: 200px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.profile-name {
+    margin-top: 100px;
+}
+
+.profile-name p {
+    text-align: center;
+    font-size: 50px;
+}
+
+.profile-form {
+    background-color: #F1EFEF;
+    min-height: 20rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-bottom: 10px;
+}
+
+.profile-form-header {
+    border-bottom: 2px solid rgb(152, 150, 150);
+    padding: 10px;
+}
+
+.profile-form-header p {
+    color: rgb(0, 0, 0, 0.6);
+    font-size: 20px;
+}
+
+.m{
+    margin: 45px 34px;
+}
+
+.p-5{
+    padding: 5px;
+}
+
+.p-form input[type= text] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px 1px rgb(0, 0, 0, 0.3);
+    margin: 10px 0px;
+}
+
+.p-form input[type=text]:focus{
+    outline: none;
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px 1px rgb(0, 0, 0, 0.3);
+}
+
+.p-form label {
+    display: block;
+    color: #278B8B;
+}
+
+.b1 {
+    padding: 10px 20px;
+    background-color: #E72121;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.b2 {
+    padding: 8px 20px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 3px 2px 2px 2px rgb(203, 200, 200);
+    border-radius: 5px;
+}
+
+.m15 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.update-button {
+    width: 75%;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.update-button:hover {
+    background-color: rgb(22, 21, 58);
+    color: white;
+}

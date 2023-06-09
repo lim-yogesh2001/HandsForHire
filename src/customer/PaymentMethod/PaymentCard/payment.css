@@ -1,0 +1,47 @@
+
+
+.payment-card {
+    margin: 20px 0px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: -2px 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.payment-card p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.payment-body {
+    margin: 10px;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-logo {
+    object-fit: contain;
+    height: 150px;
+    width: 250px;
+}
+
+.payment-body p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: rgba(7, 99, 237, 0.7);
+}

@@ -1,0 +1,30 @@
+
+body{
+    background-color: #F0ECEC;
+}
+
+.main-body {
+    margin: 12px;
+    padding: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.main-item1 {
+    flex: 20%;
+    flex-grow: 1;
+}
+
+.main-item2 {
+    flex: 50%;
+    flex-grow: 3;
+}
+
+.main-item3 {
+    flex: 20%;
+    flex-grow: 1;
+}

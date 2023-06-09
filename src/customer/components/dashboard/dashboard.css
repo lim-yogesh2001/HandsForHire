@@ -1,0 +1,35 @@
+
+.dashboard-container {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 24px;
+    /* height: 20vh; */
+    padding-top: 0;
+    background-color: #C4C4C4;
+    position: relative;
+    /* position: absolute; */
+}
+
+.dashboard-items {
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+    line-height: 2;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+}
+
+.dashboard-items:hover {
+    background-color: #16153A;
+    color: white;
+    cursor: pointer;
+}
+
+.item-links {
+    color: black;
+    text-decoration: none;
+}
+
+.item-links:hover {
+    color: white;
+}
