@@ -1,0 +1,17 @@
+.payment-container {
+    margin: 0px;
+    padding: 10px;
+}
+
+.payment-header {
+    padding: 5px;
+    border-bottom: 1px solid #000000;
+}
+
+.payment-header p {
+    padding-left: 10px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'Raleway';
+}
