@@ -1,0 +1,76 @@
+
+
+.nav-body{
+    background-color: #186886;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .logo-image {
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+} */
+
+.nav-item1{
+    margin-left: 50px;
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-label {
+    flex: 90%;
+    height: 40px;
+    background-image: url(../../../assets/HandsforHireLogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.handsforhireLogo {
+    background-image: url(../../../assets/img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    flex: 5%;
+}
+
+.nav-item2{
+    flex: 50%;
+    margin: 10px;
+    padding: 5px 10px 5px 10px
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    display: block;
+    padding: 5px 5px;
+    margin: 10px 20px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 100;
+    color: #e7e4e4;
+}
+
+.active {
+    background: linear-gradient(to right, #22EAEA, #253044);
+    padding: 8px 40px;
+    border-radius: 3px;
+    box-shadow: 1px 5px 8px 1px rgb(141, 220, 201);
+}
+
+.active:hover{
+    background: linear-gradient(to right,  rgb(42, 219, 178), #253044);
+}
+

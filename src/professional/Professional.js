@@ -1,30 +1,24 @@
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React from "react";
-import Home from "./pages/Home/Home";
-import HomeLoggedIn from "./pages/HomeLoggedIn/HomeLoggedIn";
-import BrowseProfessional from "./pages/BrowseProfessional/BrowseProfessional";
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Home from './Home/Home';
+import Charts from "./Charts/Charts";
 
-const professionalRouter = createBrowserRouter([
-    {
-        path: '/',
-        element: <Home />
-    },
-    {
-        path: '/home/loggedIn',
-        element: <HomeLoggedIn />
-    },
-    {
-        path: '/browse-professionals',
-        element: <BrowseProfessional />
-    }
-])
+export default function Professional() {
+    const professionalRouter = createBrowserRouter([
+        {
+            path: '/',
+            element: <Home />,
+            children: [
+                {
+                    path: '/',
+                    element: <Charts />
+                }
+            ]
+        }
+    ])
 
-function Professional () {
-    return (
-        <React.StrictMode>
-            <RouterProvider router={professionalRouter} />
-        </React.StrictMode>
-    );
+    return (<React.StrictMode>
+        <RouterProvider router={professionalRouter} />
+    </React.StrictMode>)
 }
-
-export default Professional;

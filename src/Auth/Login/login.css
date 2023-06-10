@@ -1,0 +1,126 @@
+
+.label-header {
+    font-size: 24px;
+    color: rgb(65, 63, 63);
+    margin-left: 10px;
+}
+
+.mr {
+    margin-right: 5rem;
+}
+
+.custom-icons {
+    font-size: 1.5rem;
+    color: #403e3e;
+}
+
+
+.auth-details {
+    margin: auto;
+    position: absolute;
+    display: flex;
+    top: 20%;
+    left: 20%;
+    width: 65%;
+    min-height: 70%;
+    /* padding: 10px; */
+    border: 1px solid black;
+}
+
+.auth-part1{
+    flex-grow: 2;
+    order: 1;
+    flex: 0 0 50%;
+}
+
+.auth-part2 {
+    background-image: url(../../../assets/home_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 2;
+    order: 2;
+}
+
+.input-style {
+    border: none;
+    width: 65%;
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
+    border-bottom: 2px solid steelblue;
+}
+
+.input-style:focus {
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid grey;
+}
+
+.auth-headers {
+    display: flex;
+    margin: 20px 30px;
+}
+
+.custom-logo{
+    margin: 10px;
+    background-image: url(../../../assets/HandsforHireLogo.png);
+    flex: 0 0 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text-btn{
+    cursor: pointer;
+    margin: 20px 15px 5px 15px;
+    color: rgb(88, 190, 190);
+}
+
+.text-btn:hover{
+    color: grey;
+    font-size: 18px;
+}
+
+.btn-submit{
+    display: block;
+    margin: 10px;
+    width: 70%;
+    height: 50px;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f1f1f1;
+    box-shadow: 0 5px 5px 1px rgb(141, 220, 201);
+    background-image: linear-gradient(to top right, rgb(34,234, 234), rgb(37,48,68));
+}
+
+.btn-submit:hover{
+    background-image: linear-gradient(to top right, rgb(42, 219, 178), rgb(37,48,68));
+}
+
+.auth-body {
+    margin: auto;
+    width: 70%;
+    padding: 8px;
+}
+
+.form-items {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.switch-user {
+    color: #6C6A6A;
+    margin-top: 3rem;
+    margin-right: 3rem; 
+    text-align: center;
+    cursor: pointer;
+}

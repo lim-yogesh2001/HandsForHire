@@ -7,7 +7,7 @@ export default function Dashboard({ items }) {
     const renderedItems = items.map((item) => {
         console.log(item.accountNdsettings);
         return (
-            <div className='dashboard-items' key={item}>
+            <div className='dashboard-items' key={item.key}>
                 {
                     item.key === "dashboard" ? <Link className='item-links' to={'/'}>{item.name}</Link> :
                         item.key === "profile" ? <Link className='item-links' to={'/customer/accountNdSettings/' + item.key}>{item.name}</Link> :
