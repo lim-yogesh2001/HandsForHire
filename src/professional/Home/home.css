@@ -6,6 +6,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: flex-start;
     margin: 20px;
 }
 
@@ -16,12 +17,12 @@ body{
 
 .main-item-2{
     flex: 70%;
-    margin: 10px;
+    /* margin: 10px; */
+    margin-left: 10px;
 }
 
 .dashboard-region {
-    min-height: 0vh;
-    margin: 10px;
+    /* margin: 10px; */
     width: 100%;
 }
 

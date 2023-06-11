@@ -1,12 +1,13 @@
 
 
-.services {
-    min-height: 120vh;
-    background-color: #ffffff;
+.web-services {
+    min-height: 150vh;
+    padding: 10px;
+    /* background-color: #ffffff; */
 }
 
 
-.service-1 {
+.web-service-1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -14,18 +15,18 @@
     margin-top: 100px;
 }
 
-.service1-item-1{
+.web-service1-item-1{
     flex: 50%;
     margin-left: 200px;
 }
 
-.service1-item-2{
+.web-service1-item-2{
     flex: 50%;
     margin-left: 200px;
 }
 
 
-.service1-image{
+.web-service1-image{
     background-image: url(https://images.pexels.com/photos/9666305/pexels-photo-9666305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     height: 453px;
     width: 415px;
@@ -34,23 +35,23 @@
     border-radius: 22px;
 }
 
-.service-title {
+.web-service-title {
     font-size: 42px;
     font-weight: 400;
 }
 
-.service1-item-1 ul {
+.web-service1-item-1 ul {
     padding: 10px;
     margin-left: 30px;
 }
 
-.service1-item-1 ul li {
+.web-service1-item-1 ul li {
     padding: 10px;
     font-size: medium;
     font-weight: 500;
 }
 
-.service-button {
+.web-service-button {
     color: #ffffff;
     border: none;
     background-color: #F53E3E;
@@ -63,12 +64,12 @@
     margin-left: 80px;
 }
 
-.service-button:hover{
+.web-service-button:hover{
     color: black;
     background-color: orange;
 }
 
-.service-2 {
+.web-service-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -76,32 +77,40 @@
     margin-top: 100px;
 }
 
-.service2-item-1{
+.web-service2-item-1{
     flex: 50%;
     margin-left: 200px;
 }
 
-.service2-item-2 {
+.web-service2-item-2 {
     flex: 50%;
     margin-left: 200px;
 }
 
-.service2-item-2 ul {
+.web-service2-item-2 ul {
     padding: 10px;
     margin-left: 30px;
 }
 
-.service2-item-2 ul li {
-    padding: 10px;
-    font-size: medium;
-    font-weight: 500;
-}
 
-.service2-image {
+.web-service2-image {
     background-image: url(https://images.pexels.com/photos/9875422/pexels-photo-9875422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     height: 453px;
     width: 415px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 22px;
+}
+
+.un-list-style{
+    list-style-type: disc;
+    color: #000;
+}
+
+.li-item {
+    color: #000;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 500;
+    color: #000;
 }

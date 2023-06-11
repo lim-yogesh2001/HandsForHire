@@ -1,9 +1,11 @@
 
-.rapid-services {
+.super-rapid-services {
     background-color: rgb(196, 196, 196, 0.5);
     min-height: 20vh;
     margin-top: 50px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .rapid-services-1 {

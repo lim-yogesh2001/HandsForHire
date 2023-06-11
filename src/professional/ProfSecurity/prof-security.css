@@ -1,0 +1,15 @@
+
+.prof-security-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+}
+
+.prof-main-container {
+    flex: 70%;
+}
+
+.prof-help-container {
+    flex: 30%;
+}

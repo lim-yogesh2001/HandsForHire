@@ -23,11 +23,11 @@ export default function Customer () {
     const customerRouter = createBrowserRouter(
         [
             {
-                path: "/",
+                path: "/customer",
                 element: <Main />,
                 children: [
                     {
-                        path: "/",
+                        path: "/customer/",
                         element: <ProfessionalList />
                     },
                     {

@@ -1,18 +1,30 @@
 import { useState } from "react";
 import LoginForm from "./LoginForm/LoginForm";
 import RegisterForm from "./RegisterForm/RegisterForm";
+import { useNavigate } from 'react-router-dom';
 import './login.css';
 
-export default function AuthCard() {
+function AuthCard( { authenticationType } ) {
     const authmode = {
-        signInAsUser: 'user',
-        signUpAsProfessional: 'professional',
+        signInAsUser: 'user-login',
+        signUpAsProfessional: 'professional-login',
         register: 'register'
     };
 
-    const [authForm, setAuthForm] = useState(authmode.register);
+    const [authForm, setAuthForm] = useState(authenticationType);
 
     console.log(authForm);
+
+    const navigate = useNavigate();
+
+    const handleLogin = (username, password) => {
+       if (authForm === authmode.signInAsUser){
+            navigate('/handsForHire/homeLoggedIn/');
+       }
+       if (authForm === authmode.signUpAsProfessional){
+            navigate('/professional/dashboard/');
+       }
+    }
 
     return (
         <>
@@ -32,8 +44,8 @@ export default function AuthCard() {
                         <div className="auth-body">
                             <div>
                                 <p className="label-header">Sign In</p>
-                                <LoginForm authForm={authForm} />
-                                <p className="switch-user" onClick={() => setAuthForm(!authmode.signUpAsProfessional)}>{authForm === "user" ? "Professional Sign In Here" : "User Sign In Here"}</p>
+                                <LoginForm login={handleLogin} authForm={authForm} />
+                                <p className="switch-user" onClick={() => setAuthForm(authmode.signUpAsProfessional)}>{authForm === "user-login" ? "Professional Sign In Here" : "User Sign In Here"}</p>
                             </div>
                         </div>}
                 </div>
@@ -45,3 +57,5 @@ export default function AuthCard() {
         </>
     );
 }
+
+export default AuthCard;

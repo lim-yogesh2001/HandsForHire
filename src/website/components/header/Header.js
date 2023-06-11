@@ -3,10 +3,10 @@ import './header.css';
 import { BsCaretDownFill, BsChatDots } from "react-icons/bs";
 import { IoNotificationsOutline } from 'react-icons/io5';
 import SearchBar from '../searchbar/Searchbar';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header({ isAuthenticated, imageheight, height, boolSearchBar }) {
-
-
 
     return (
         <header>
@@ -22,8 +22,8 @@ function Header({ isAuthenticated, imageheight, height, boolSearchBar }) {
                             <div style={{ display: 'flex', justifyContent: 'center' }}>
                                 <p>Become a professional</p><span><BsCaretDownFill style={{ paddingLeft: "10px", color: 'white' }} /></span>
                             </div>
-                            <p>Sign Up</p>
-                            <p>Sign In</p>
+                            <Link className='navigation-li' to='/auth/register/'><p className='sign-up-txt'>Sign Up</p></Link>
+                            <Link className='navigation-li' to='/auth/login/'><p className='sign-in-txt'>Sign In</p></Link>
                         </div> :
                             <div className='header-item2'>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }}>

@@ -3,22 +3,22 @@ import { IconContext } from "react-icons";
 import { MdLockReset, MdEmail } from "react-icons/md";
 import './login-form.css';
 
-export default function LoginForm() {
+export default function LoginForm({ login }) {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(email);
-        console.log(password);
+       if (email !== null && password !== null){
+        login(email, password);
+       }
     }
 
     return (
         <form className="form" onSubmit={handleSubmit}>
             <IconContext.Provider value={{ className: "custom-icons" }}>
                 <div className="form-items">
-                    <input className="input-style" src={MdEmail} name="email" type="text" placeholder="Enter Email" onChange={(e) => setEmail(e.target.value)} value={email} ></input>
+                    <input className="input-style" name="email" type="text" placeholder="Enter Email" onChange={(e) => setEmail(e.target.value)} value={email} ></input>
                     <MdEmail />
                 </div>
                 <div className="form-items">

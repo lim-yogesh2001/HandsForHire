@@ -1,12 +1,12 @@
-import './home.css';
+import './web-home.css';
 import Header from '../../components/header/Header';
-import Service from '../../components/services/Service';
+import WebService from '../../components/services/WebService';
 import RapidServices from '../../components/rapid-service/RapidServices';
 import ProfessionalCard from '../../components/professional-card/ProfessionalCard';
 import ProfileCarousel from '../../components/profile-carousel/ProfileCarousel';
 import Footer from '../../components/footer/Footer';
 
-function HomePage() {
+function WebHome() {
     const profiles = [{
         profileName: "Jhon Denvier",
         job: "ceo TIA",
@@ -29,7 +29,7 @@ function HomePage() {
                     <div className='headline-text'>
                         <p>Get help from top rated plumber and electrician</p>
                     </div>
-                    <Service />
+                    <WebService />
                 </section>
                 <section>
                     <RapidServices />
@@ -65,4 +65,4 @@ function HomePage() {
     )
 }
 
-export default HomePage;
+export default WebHome;

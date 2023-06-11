@@ -2,7 +2,7 @@ import './rapidservice.css';
 
 function RapidServices() {
     return (
-        <div className='rapid-services'>
+        <div className='super-rapid-services'>
             <div className='rapid-services-1'>
                 <p className='rapid-service-title'>Rapid Services</p>
             </div>

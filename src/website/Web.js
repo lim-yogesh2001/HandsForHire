@@ -1,29 +1,9 @@
 import React from "react";
-import Home from "./pages/Home/Home";
-import HomeLoggedIn from "./pages/HomeLoggedIn/HomeLoggedIn";
-import BrowseProfessional from "./pages/BrowseProfessional/BrowseProfessional";
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-
-const webRouter = createBrowserRouter([
-    {
-        path: '/',
-        element: <Home />
-    },
-    {
-        path: '/home/loggedIn',
-        element: <HomeLoggedIn />
-    },
-    {
-        path: '/browse-professionals',
-        element: <BrowseProfessional />
-    }
-])
+import WebHome from "./pages/WebHome/WebHome";
 
 function Web () {
     return (
-        <React.StrictMode>
-            <RouterProvider router={webRouter} />
-        </React.StrictMode>
+        <WebHome />
     );
 }
 
