@@ -5,11 +5,11 @@ import ProfessionalList from "./ProfList/ProfessionalList";
 import MyHirings from "./MyHirings/MyHirings";
 import MyFavorite from "./MyFavorite/MyFavorite";
 import AccountAndSettings from "./AccountAndSettings/AccountAndSettings";
-import MyProfile from "./MyProfile/MyProfile";
-import Security from "./Security/Security";
-import PaymentMethod from "./PaymentMethod/PaymentMethod";
-import PaymentHistory from "./PaymentHistory/PaymentHistory";
-import DeleteAccount from "./DeleteAccount/DeleteAccount";
+import MyProfile from "../components/MyProfile/MyProfile";
+import Security from "../components/Security/Security";
+import PaymentMethod from "../components/PaymentMethod/PaymentMethod";
+import PaymentHistory from "../components/PaymentHistory/PaymentHistory";
+import DeleteAccount from "../components/DeleteAccount/DeleteAccount";
 import React from "react";
 
 export default function Customer () {

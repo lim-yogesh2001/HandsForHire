@@ -1,7 +1,7 @@
 
 import Dashboard from '../components/dashboard/Dashboard';
 import { Outlet } from 'react-router-dom';
-import HelpSupport from '../components/help&support/HelpSupport';
+import HelpSupport from '../../components/help&support/HelpSupport';
 import ServerHeader from '../../components/ServerHeader/ServerHeader';
 
 import './account-settings.css';
