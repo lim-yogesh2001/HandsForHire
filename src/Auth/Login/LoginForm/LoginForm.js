@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IconContext } from "react-icons";
 import { MdLockReset, MdEmail } from "react-icons/md";
+import './login-form.css';
 
 export default function LoginForm() {
 

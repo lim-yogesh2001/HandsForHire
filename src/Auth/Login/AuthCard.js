@@ -1,7 +1,7 @@
 import { useState } from "react";
-import LoginForm from "./LoginForm";
+import LoginForm from "./LoginForm/LoginForm";
 import RegisterForm from "./RegisterForm/RegisterForm";
-import './login.css';
+import './auth.css';
 
 export default function AuthCard() {
     const authmode = {

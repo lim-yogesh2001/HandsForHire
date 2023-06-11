@@ -1,0 +1,43 @@
+
+.custom-icons {
+    font-size: 1.5rem;
+    color: #403e3e;
+}
+
+
+.form-items {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.input-style {
+    border: none;
+    width: 65%;
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
+    border-bottom: 2px solid steelblue;
+}
+
+.input-style:focus {
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid grey;
+}
+
+.btn-submit{
+    display: block;
+    margin: 10px;
+    width: 70%;
+    height: 50px;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f1f1f1;
+    box-shadow: 0 5px 5px 1px rgb(141, 220, 201);
+    background-image: linear-gradient(to top right, rgb(34,234, 234), rgb(37,48,68));
+}
+
+.btn-submit:hover{
+    background-image: linear-gradient(to top right, rgb(42, 219, 178), rgb(37,48,68));
+}
