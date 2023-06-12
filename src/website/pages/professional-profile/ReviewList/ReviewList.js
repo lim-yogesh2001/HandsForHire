@@ -1,5 +1,5 @@
 
-import Review from '../../../../components/review/Review';
+import Review from '../../../components/review/Review';
 import './review-list.css';
 
 function ReviewList ({ items }) {

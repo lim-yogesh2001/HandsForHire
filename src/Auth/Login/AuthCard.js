@@ -13,8 +13,6 @@ function AuthCard( { authenticationType } ) {
 
     const [authForm, setAuthForm] = useState(authenticationType);
 
-    console.log(authForm);
-
     const navigate = useNavigate();
 
     const handleLogin = (username, password) => {

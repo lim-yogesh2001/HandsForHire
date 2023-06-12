@@ -8,6 +8,7 @@ import Auth from './Auth/Auth';
 import Professional from './professional/Professional';
 import HomeLoggedIn from './website/pages/HomeLoggedIn/HomeLoggedIn';
 import BrowseProfessional from './website/pages/BrowseProfessional/BrowseProfessional';
+import ProfessionalProfile from './website/pages/professional-profile/ProfessionalProfile';
 import Charts from './professional//Charts/Charts';
 
 function App() {
@@ -32,7 +33,14 @@ function App() {
       path: '/auth/register',
       element: <Auth authenticationType='register' />
     },
-    
+    {
+      path: '/handsForHire/browseProfessional/',
+      element: <BrowseProfessional />
+    },
+    {
+      path: '/handsForHire/viewProfile/',
+      element: <ProfessionalProfile />
+    },
     {
       path: '/customer/',
       element: <Customer />

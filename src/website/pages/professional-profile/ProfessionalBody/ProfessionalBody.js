@@ -1,11 +1,13 @@
 
 import { Rating } from '@mui/material';
 import { MdMoreHoriz, MdMonitor, MdPhoneAndroid, MdOutlineLightbulb } from 'react-icons/md';
-import './professional-profile.css';
-import ReviewList from './ReviewList/ReviewList';
+import ReviewList from '../ReviewList/ReviewList';
+import { useLocation } from 'react-router-dom';
+import './professional-body.css';
 
 
-function ProfessionalProfile() {
+
+function ProfessionalBody() {
     const reviewsAndComments = [
         {
             id: 1,
@@ -27,28 +29,24 @@ function ProfessionalProfile() {
         },
     ]
 
+    const location = useLocation();
+    const data = location.state;
+
+
     return (
         <div className="profile-container">
             <div className="profile-intro-card">
-                <img className='profile' src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt='profile' />
-                <p className='first-name'>Username</p>
-                <p className='job-type'>Job Type</p>
+                <img className='cover-image' src={data.image} alt='profile' />
+                <p className='first-name'>{data.title}</p>
+                <p className='job-type'>{data.job}</p>
                 <div className='ratings-reviews'>
-                    <p className='rating-letter'>4.1</p>
-                    <Rating value={4.1} size='30px' style={{ margin: "0px 10px" }} />
-                    <p className='reviews'>( 10 reviews )</p>
+                    <p className='rating-letter'>{data.ratings}</p>
+                    <Rating value={data.ratings} size='30px' style={{ margin: "0px 10px" }} />
+                    <p className='reviews'>( {data.reviews} reviews )</p>
                 </div>
                 <div className='message-container'>
                     <button className='message-button'>Message Now</button>
                     <button className='menu-bar'><MdMoreHoriz style={{ height: '85px', width: '85px' }} /></button>
-                    {/* <Menu
-                        id='menu'
-                        MenuListProps={{
-                            'aria-labelledby': 'basic-button',
-                        }} >
-                        <MenuItem >Hire Now</MenuItem>
-                        <MenuItem >Report</MenuItem>
-                    </Menu> */}
                 </div>
                 <div className='user-rate-container'>
                     <p>Per Hour: Rs.500</p>
@@ -58,7 +56,7 @@ function ProfessionalProfile() {
                 <div className='about-user'>
                     <p className='title-style'>About Me</p>
                     <p className='role'>Piple Fitting | Installation</p>
-                    <p className='description'>Training and development research has a long tradition within applied psychology dating back to the early 1900s. Over the years, not only has interest in the topic grown but there have been dramatic changes in both the science and practice of training and development. In the current article, we examine the evolution of training and development research using articles published in the Journal of Applied Psychology (JAP) as a primary lens to analyze what we have learned and to identify where future research is needed.</p>
+                    <p className='description'>{data.description}</p>
                     <div className='skills-container'>
                         <div className='skills'>
                             <MdMonitor style={{ marginRight: "20px", color: 'rgb(0,0,0, 0.8)' }} size="30px" />
@@ -83,4 +81,4 @@ function ProfessionalProfile() {
     )
 }
 
-export default ProfessionalProfile;
+export default ProfessionalBody;

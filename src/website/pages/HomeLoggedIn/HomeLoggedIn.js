@@ -3,16 +3,11 @@ import Header from '../../components/header/Header';
 import ProfessionalCard from '../../components/professional-card/ProfessionalCard';
 import RapidServices from '../../components/rapid-service/RapidServices';
 import ProfileCarousel from '../../components/profile-carousel/ProfileCarousel';
-import './homeloggedin.css';
 import Footer from '../../components/footer/Footer';
+import { useNavigate } from 'react-router-dom';
+import './homeloggedin.css';
 
 export default function HomeLoggedIn() {
-
-
-    // const professionals = [
-
-    // ]
-
     const profiles = [{
         profileName: "Jhon Denvier",
         job: "ceo TIA",
@@ -20,6 +15,12 @@ export default function HomeLoggedIn() {
         imageUrl: 'https://images.unsplash.com/photo-1457449940276-e8deed18bfff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
     },
     ];
+
+    const navigate = useNavigate();
+
+    function navigateToBrowseProfessional() {
+        navigate('/handsForHire/browseProfessional/');
+    }
 
 
     const renderProfiles = profiles.map((x) => {
@@ -37,7 +38,7 @@ export default function HomeLoggedIn() {
                         </div>
                         <div className='section-1-item'>
                             <p className='section-1-p'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32</p>
-                            <button className='browse-button'>Browse Professionals</button>
+                            <button className='browse-button' onClick={navigateToBrowseProfessional}>Browse Professionals</button>
                         </div>
                     </div>
                     <div className='headline-text1'>
