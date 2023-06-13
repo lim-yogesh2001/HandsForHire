@@ -9,7 +9,7 @@ export default function Dashboard({ items }) {
         return (
             <div className='dashboard-items' key={item.key}>
                 {
-                    item.key === "dashboard" ? <Link className='item-links' to={'/'}>{item.name}</Link> :
+                    item.key === "dashboard" ? <Link className='item-links' to={'/customer/dashboard/'}>{item.name}</Link> :
                         item.key === "profile" ? <Link className='item-links' to={'/customer/accountNdSettings/' + item.key}>{item.name}</Link> :
                             item.key === "security" ? <Link className='item-links' to={'/customer/accountNdSettings/' + item.key}>{item.name}</Link> :
                                 item.key === "paymentMethod" ? <Link className='item-links' to={'/customer/accountNdSettings/' + item.key}>{item.name}</Link> :

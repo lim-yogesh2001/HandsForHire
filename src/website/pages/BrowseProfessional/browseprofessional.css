@@ -6,11 +6,11 @@
 
 .filter-options {
     flex: 30%;
-    border-right: 1px solid #000000 ;
 }
 
 .professional-list-container {
     flex: 70%;
+    border-left: 1px solid #000000;
     /* margin: 10px; */
 }
 

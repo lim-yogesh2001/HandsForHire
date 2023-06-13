@@ -6,7 +6,7 @@ export default function ProfessionalDashboard({items}) {
 
     const renderedItems = items.map( (item) => {
         return <div className='dashboard-items' key={item.key}>
-            <Link className='item-links' to={`/${item.key}`}>{item.name}</Link>
+            <Link className='item-links' to={`/professional/${item.key}`}>{item.name}</Link>
         </div>
     })
     return (

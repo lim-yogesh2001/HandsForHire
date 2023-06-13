@@ -9,7 +9,7 @@
     height: 40vh;
     margin-left: 40px;
     margin-left: 40px;
-    /* width: 100%; */
+    overflow: hidden;
 }
 
 .help-support-header {
@@ -35,7 +35,7 @@
     white-space: pre-line;
 }
 
-.help-support-body, ul, li {
+.help-li-style {
     padding: 5px;
     width: auto;
     color: rgb(0, 0, 0, 0.6);

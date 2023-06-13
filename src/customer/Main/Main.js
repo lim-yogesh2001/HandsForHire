@@ -29,9 +29,6 @@ export default function Main() {
                     </div>
                 </div>
             </main>
-            {/* <footer>
-                <div>Footer</div>
-            </footer> */}
         </>
     );
 }

@@ -32,9 +32,6 @@ export default function AccountAndSettings() {
                     </div>
                 </div>
             </main>
-            <footer>
-                <div>Footer</div>
-            </footer>
         </>
     )
 }
