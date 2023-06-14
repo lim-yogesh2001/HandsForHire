@@ -24,6 +24,14 @@ function AuthCard( { authenticationType } ) {
        }
     }
 
+    const handleLoginRegister = (mode) =>{
+        if (mode === authmode.signInAsUser){
+            setAuthForm(authmode.signInAsUser);
+        } else {
+            setAuthForm(authmode.register);
+        }
+    }
+
     return (
         <>
             <div className="auth-details">
@@ -31,8 +39,8 @@ function AuthCard( { authenticationType } ) {
                     <div className="auth-headers">
                         <img style={{ borderRadius: "100px", objectFit: "cover", width: "80px", height: "80px" }} src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="60px" height="70px" alt="dog"></img>
                         <div className="custom-logo"></div>
-                        <p className="text-btn" onClick={() => setAuthForm(authmode.signInAsUser)}>Login</p>
-                        <p className="text-btn" onClick={() => setAuthForm(authmode.register)}>Sign UP</p>
+                        <p className="text-btn" onClick={() => handleLoginRegister(authmode.signInAsUser)}>Login</p>
+                        <p className="text-btn" onClick={() => handleLoginRegister(authmode.register)}>Sign UP</p>
                     </div>
                     {authForm === 'register' ? 
                     <div className="register-container">

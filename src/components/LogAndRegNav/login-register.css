@@ -57,10 +57,18 @@ li {
     display: block;
     padding: 5px 5px;
     margin: 10px 20px;
-    cursor: pointer;
     font-size: medium;
     font-weight: 100;
     color: #e7e4e4;
+}
+
+.auth-link {
+    text-decoration: none;
+    color: #e7e4e4;
+}
+
+.auth-link:hover {
+    color: orange;
 }
 
 .active {
@@ -69,6 +77,14 @@ li {
     border-radius: 3px;
     box-shadow: 1px 5px 8px 1px rgb(141, 220, 201);
 }
+
+
+/* .auth-li-item:hover {
+    background: linear-gradient(to right, #22EAEA, #253044);
+    padding: 8px 40px;
+    border-radius: 3px;
+    box-shadow: 1px 5px 8px 1px rgb(141, 220, 201);
+} */
 
 .active:hover{
     background: linear-gradient(to right,  rgb(42, 219, 178), #253044);

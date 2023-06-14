@@ -19,7 +19,7 @@ export default function RegisterForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className='reg-form' onSubmit={handleSubmit}>
             <div className='register-form-item'>
                 <input className="reg-input-style" name="name" type="text" placeholder="Enter Full Name" onChange={(e) => setName(e.target.value)} value={name} ></input>
             </div>

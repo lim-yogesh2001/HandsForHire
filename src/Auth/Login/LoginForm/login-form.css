@@ -17,11 +17,16 @@
     padding: 10px;
     margin: 10px 5px 10px 5px;
     border-bottom: 2px solid steelblue;
+    background: none;
+}
+
+::placeholder{
+    color: steelblue;
 }
 
 .input-style:focus {
     outline: none;
-    font-size: 16px;
+    /* font-size: 16px; */
     border-bottom: 2px solid grey;
 }
 

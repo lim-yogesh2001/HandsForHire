@@ -2,7 +2,7 @@
 import { Rating } from '@mui/material';
 import { MdMoreHoriz, MdMonitor, MdPhoneAndroid, MdOutlineLightbulb } from 'react-icons/md';
 import ReviewList from '../ReviewList/ReviewList';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './professional-body.css';
 
 
@@ -32,6 +32,11 @@ function ProfessionalBody() {
     const location = useLocation();
     const data = location.state;
 
+    const navigate = useNavigate();
+    const handleNavigationToCustomer = ()  => {
+        navigate('/customer/dashboard')
+    }
+
 
     return (
         <div className="profile-container">
@@ -45,7 +50,7 @@ function ProfessionalBody() {
                     <p className='reviews'>( {data.reviews} reviews )</p>
                 </div>
                 <div className='message-container'>
-                    <button className='message-button'>Message Now</button>
+                    <button className='message-button' onClick={handleNavigationToCustomer}>Message Now</button>
                     <button className='menu-bar'><MdMoreHoriz style={{ height: '85px', width: '85px' }} /></button>
                 </div>
                 <div className='user-rate-container'>

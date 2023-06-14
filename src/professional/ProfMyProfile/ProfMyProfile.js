@@ -6,6 +6,8 @@ export default function ProfMyProfile({ profileDetails }) {
     const [fullName, setFullName] = useState(profileDetails.fullname);
     const [username, setUserName] = useState(profileDetails.username);
     const [address, setAddress] = useState(profileDetails.address);
+    const [experience, setExperience] = useState(profileDetails.experience);
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -46,15 +48,10 @@ export default function ProfMyProfile({ profileDetails }) {
                             </div>
                             <div className='p-5'>
                                 <label>Experience</label>
-                                <input type='text' name="address" onChange={(e) => setAddress(e.target.value)} value={address} placeholder='Enter Address' />
+                                <input type='number' name="experience" onChange={(e) => setExperience(e.target.value)} value={experience} placeholder='Enter Experience' />
                             </div>
-                            <div className='p-5'>
-                                <button className='b1'>Choose Your Life</button>
-                                <button className='b2'>No Files Chosen</button>
-                            </div>
-                            <div className='m15'>
-                                <button className='update-button' onSubmit={handleSubmit}>Update Profile</button>
-                            </div>
+                            <button className='prof-about-button'>About</button>
+                            <button className='update-button' onSubmit={handleSubmit}>Update Profile</button>
                         </form>
                     </div>
                 </div>

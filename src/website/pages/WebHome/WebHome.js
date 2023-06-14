@@ -8,6 +8,7 @@ import Footer from '../../components/footer/Footer';
 
 function WebHome() {
     const profiles = [{
+        id: 'p1',
         profileName: "Jhon Denvier",
         job: "ceo TIA",
         description: "He’s a 16-time World Champion, New York Times best-selling author and record-setting Make-A-Wish granter. He’s released a hit album, starred in blockbuster movies and carried the torch for WWE since he first set foot in a WWE ring nearly two decades ago. If you really can’t see John Cena at this point, chances are you simply aren’t looking. Was there any doubt Cena would become the living legend he is today? You practically knew you were glimpsing the future “Face That Runs the Place” when a muscular Massachusetts kid threw down with Kurt Angle for a chance to become a true WWE Superstar. Sure enough, a little ruthless aggression went a long way. After gaining the respect of his peers by stepping to The Olympic Hero, Cena went supernova as the fire-spitting Doctor of Thuganomics, eventually reaching the peak by upending JBL for his first WWE Championship at WrestleMania 21. Far from being a one-hit wonder, however, Cena set up shop at the mountaintop and refused to decamp, instituting an open-challenge policy to anyone who thought they could knock him off: You want some, come get some. And slowly but surely, Cena — preaching an ethos of “Hustle, Loyalty, Respect” — not only amassed a battalion of followers he dubbed the “Cenation,” but also accumulated enough hardware to fill a Home Depot.",
@@ -17,7 +18,7 @@ function WebHome() {
 
 
     const renderProfiles = profiles.map((x) => {
-        return <ProfileCarousel profileName={x.profileName} job={x.job} description={x.description} imageUrl={x.imageUrl} />
+        return <ProfileCarousel key={x.id} profileName={x.profileName} job={x.job} description={x.description} imageUrl={x.imageUrl} />
     });
 
 
