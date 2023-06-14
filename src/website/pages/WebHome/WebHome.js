@@ -27,7 +27,7 @@ function WebHome() {
             <Header isAuthenticated={false} imageheight="80vh" height="80vh" boolSearchBar={false} />
             <main>
                 <section>
-                    <div className='headline-text'>
+                    <div className='headline-text inline-container'>
                         <p>Get help from top rated plumber and electrician</p>
                     </div>
                     <WebService />
@@ -38,7 +38,7 @@ function WebHome() {
                         <p>Connect with</p>
                         <p>top rated plumber and electrician</p>
                         <div className='regular-div'>
-                            <div className='grid-container'>
+                            <div className='showProfessionals'>
                                 <ProfessionalCard jobType="plumber" />
                                 <ProfessionalCard jobType="plumber" />
                                 <ProfessionalCard jobType="plumber" />

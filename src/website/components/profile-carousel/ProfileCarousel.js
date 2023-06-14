@@ -9,7 +9,7 @@ function ProfileCarousel({ profileName, job, description, imageUrl }) {
     return (
 
         // <div className='carousel-container'>
-            <Carousel axis='horizontal'>
+            <Carousel showThumbs={false}  axis='horizontal'>
                 <div className='carousel-item'>
                     <div className='carousel-details'>
                         <div className='carousel-section1'>

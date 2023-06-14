@@ -2,9 +2,9 @@
 
 .section-1 {
     display: flex;
-    padding: 10px;
+    padding: 20px;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .section-1-item {
@@ -41,6 +41,7 @@
 
 .section-2 {
     background-color: rgb(235, 234, 234, 1);
+    min-height: auto;
 }
 
 .regular-div {

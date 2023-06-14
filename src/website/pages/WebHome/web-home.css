@@ -29,10 +29,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    padding: 20px;
+    /* margin: 20px; */
 }
 
-.grid-container {
+.showProfessionals {
     margin: 50px;
     display: inline-grid;
     column-gap: 170px;
